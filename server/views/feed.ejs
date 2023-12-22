@@ -8,7 +8,7 @@
       </div>
     </div>
     <div class="story px-3 flex gap-3 overflow-auto mt-5">
-      <% post.forEach(function(elem){ %>
+      <% post.reverse().forEach(function(elem){ %>
         <div class="circle flex-shrink-0">
           <div
             class="gradient w-[18vw] h-[18vw] bg-sky-100 rounded-full bg-gradient-to-r from-purple-700 to-orange-500 flex items-center justify-center">
@@ -29,7 +29,7 @@
 
     </div>
     <div class="posts mb-20">
-      <% post.reverse().forEach(function(elem){ %>
+      <% post.forEach((elem)=>{ %>
         <div class="post mt-10 w-full min-h-[50vh]">
           <div class="title px-4 flex items-center gap-2">
             <div class="w-[8vw] h-[8vw] bg-sky-100 rounded-full overflow-hidden">
